@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EntryFragment"
+    android:layout_margin="24dp">
+
+    <ImageView
+        android:id="@+id/mountain_range_imageView"
+        android:layout_marginTop="60dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_mountain_range"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="Image of mountains and trees"
+        />
+
+    <TextView
+        android:id="@+id/welcome_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="This is a catchy intro"
+        android:textSize="20sp"
+        android:textColor="@color/charcoal"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintTop_toBottomOf="@id/mountain_range_imageView"
+        app:layout_constraintBottom_toTopOf="@id/get_started_button"
+        />
+
+    <Button
+        android:id="@+id/get_started_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        style="@style/EnabledTealButton"
+        android:text="@string/take_a_hike"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_textView"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
